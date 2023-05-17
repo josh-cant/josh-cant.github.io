@@ -1,0 +1,53 @@
+body {
+    font-family: "Open Sans";
+    background-color: #f1f1f1;
+}
+
+.box {
+    background-color: #7e909a;
+    margin: 0px;
+    padding: 0px;
+}
+
+.selection_box {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.banner_box {
+    background-color: #1c4380;
+    color: #a5d8dd;
+    padding-left: 25px;
+}
+
+.banner_title {
+    margin: 0px;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.hovered{
+    opacity: 1;
+    fill: antiquewhite;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+.selected_college{
+    z-index: 9999;
+}
+
+.legend_class{
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}

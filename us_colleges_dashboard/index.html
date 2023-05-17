@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Statistics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="dashboard">
+        <table width="1200" border="0">
+            <colgroup>
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+                <col width="5%"><col width="5%">
+            </colgroup>
+            <tr height="30">
+                <td colspan="20" class="banner_box">
+                    <p class="banner_title">Exploring US Colleges</p>
+                </td>
+            </tr>
+            <tr valign="top" height="250">
+                <td colspan="5" class="box">
+                    <p class="selection_box"><b>Filter Schools:</b> (ctrl click to multi select)</p>
+                    <select class="selection_box" id="college_selection_box" multiple></select>
+                    <button id="clearButton">Reset</button>
+                    <p class="selection_box"><b>X Variable:</b></p>
+                    <select class="selection_box" id="x_variable_selection_box"></select>
+                    <p class="selection_box"><b>Y Variable:</b></p>
+                    <select class="selection_box" id="y_variable_selection_box"></select>
+                    <br>
+                    <p class="selection_box" id="legendText"><b>Current Legend: Region</b></p>
+                    <button id="legendButton" class="selection_box">Toggle Legend</button>
+                </td>
+                <td colspan="15" class="box">
+                    <svg height="250" width="900" id="main_svg">
+                        <g id="main_group">
+                            
+                        </g>
+                    </svg>
+                </td>
+            </tr>
+            <tr valign="top" height="250">
+                <td colspan="6" class="box">
+                    <svg height="250" width="360" id="left_svg">
+                        <g id="left_group">
+                            
+                        </g>
+                    </svg>
+                </td>
+                <td colspan="8" class="box">
+                    <svg height="250" width="480" id="mid_svg">
+                        <g id="mid_group">
+                            
+                        </g>
+                    </svg>
+                </td>
+                <td colspan="6" class="box">
+                    <svg height="250" width="360" id="right_svg">
+                        <g id="right_group">
+                           
+                        </g>
+                    </svg>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script src="./script.js"></script>
+</html>
